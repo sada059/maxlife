@@ -1,7 +1,7 @@
 <?php
 	$dbHost = 'localhost';
-	$dbUser = 'maxlife';
-	$dbPass = 'pargile1739620';
+	$dbUser = 'root';
+	$dbPass = '';
 	$dbName = 'maxlife';
 	
 	$dbConn = mysql_connect ($dbHost, $dbUser, $dbPass) or die ('MySQL connect failed. ' . mysql_error());

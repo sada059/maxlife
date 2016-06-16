@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 $id = $_GET['id'];
 
 if ($id == '') {
@@ -20,8 +21,9 @@ if ($id == '') {
 <link rel="stylesheet" href="css/main_s.css" type="text/css" media="all">
 
 
+<?php include_once("head.php") ?>
 <!-- load jQuery and the plugin -->
-<script src="js/jquery-1.7.1.min.js"></script>
+<!--<script src="js/jquery-1.7.1.min.js"></script>-->
 <script src="js/bjqs-1.3.min.js"></script>
 
 <script type="text/javascript">
@@ -46,155 +48,183 @@ function cycleImages(){
 
 </head>
 
-<body bgcolor="#808080" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" marginwidth="0" marginheight="0">
-<div id="containerhead"><img src="/images/bg_front_red_n.jpg" /><span style="position:relative;right:-300px;"><a href="shoppingcart.php?id=<?php echo $id; ?>"><img src="/images/cart_left_s.png" border="0" /></a><a href="shoppingcart.php?id=<?php echo $id; ?>"><img src="/images/cart_middle_s.png" border="0" /></a><a href="shoppingcart.php?id=<?php echo $id; ?>"><img src="/images/cart_right_s.png" border="0" /></a></span></div>
-
-<div id="container"><div id="portfolio_cycler">
-<img class="active" src="/images/radio_ramsey.jpg" alt="Our Food Storage Recommended by Dave Ramsey" />
-<img src="/images/radio_ingraham.jpg" alt="Our Food Storage Recommended by Laura Ingraham" />	
-<img src="/images/radio_gallagher.jpg" alt="Our Food Storage Recommended by Mike Gallagher" />	
-<img src="/images/radio_gresham.jpg" alt="Our Food Storage Recommended by Tom Gresham" />		
-<img src="/images/radio_prager.jpg" alt="Our Food Storage Recommended by Dennis Prager" />	
-</div>
-<div id="banner-fade"><ul class="bjqs">
-	<li><a href="food-storage.php?id=<?php echo $id; ?>"><img src="/images/pic7.jpg" alt="Be prepared for anything" border="0"></a></li>
-    <li><a href="food-storage.php?id=<?php echo $id; ?>"><img src="/images/pic1.jpg" alt="Better tasting food storage" border="0"></a></li>
-	<li><a href="food-storage.php?id=<?php echo $id; ?>"><img src="/images/pic5.jpg" alt="snow causes empty grocery store shelves" border="0"></a></li>
-    <li><a href="compare.php?id=<?php echo $id; ?>"><img src="/images/pic3.jpg" alt="Up to 43% off" border="0"></a></li>
-    <li><a href="food-storage.php?id=<?php echo $id; ?>"><img src="/images/pic4.jpg" alt="Free shipping, lower cost" border="0"></a></li>
-  </ul></div>
-
-<div id="box1"><a href="compare.php"><img src="/images/financing.jpg" border="0" alt="Financing Option"></a></div>
-<div id="box2"><a href="why-maxlife.php?id=<?php echo $id; ?>"><img src="/images/asseenon.gif" alt="Watch our TV Commercial" border="0"></a></div>
-<div id="box3"><a href="details.php?id=<?php echo $id; ?>&pid=111"><img src="/images/try_samples.jpg" border="0" alt="Try Samples"></a></div>
-<div class="menuexpand"><ul class="navmain">
-                	<li>
-                    	<a href="index.php?id=<?php echo $id; ?>">HOME</a>
-                    </li>
-                    <li>
-                    	<a href="food-storage.php?id=<?php echo $id; ?>">FOOD STORAGE</a>
-                    	<ul>
-                    	<li></li>
-                    	<li></li>
-                    	<li>MAIN FOOD STORAGE</li>
-                    	<li>ADD-ON BUCKETS</li>
-                    	<li><a href="http://maxlifefoods.com/food-storage.php?id=<?php echo $id; ?>">Basic Family Packs</a></li>
-                    	<li><a href="http://maxlifefoods.com/meat.php?id=<?php echo $id; ?>">Meat</a></li>
-                    	<li><a href="http://maxlifefoods.com/food-storage.php?id=<?php echo $id; ?>">Deluxe Family Packs</a></li>
-                    	<li><a href="http://maxlifefoods.com/fruit.php?id=<?php echo $id; ?>">Fruit</a></li>
-                    	<li><a href="http://maxlifefoods.com/food-storage.php?id=<?php echo $id; ?>">Black Line Family Packs</a></li>
-                    	<li><a href="http://maxlifefoods.com/veg.php?id=<?php echo $id; ?>">Vegetables</a></li>
-                    	<li></li>
-                    	<li><a href="http://maxlifefoods.com/dairy.php?id=<?php echo $id; ?>&pid=4105">Dairy & Eggs</a></li>
-                    	</ul>
-                    </li>
-                    <li>
-                    	<a href="supplemental.php?id=<?php echo $id; ?>">ADD-ONS (MEAT...)</a>
-                    </li>
-                    <li>
-                    	<a href="water.php?id=<?php echo $id; ?>">H20</a>
-                    </li>
-                    <li>
-                    	<a href="glutenfree.php?id=<?php echo $id; ?>">GLUTEN</a>
-                    </li>
-                    <li>
-                    	<a href="seeds.php?id=<?php echo $id; ?>">SEEDS</a>
-                    </li>
-                    <li>
-                    	<a href="compare.php?id=<?php echo $id; ?>">COMPARE</a>
-                    </li>
-                    <li>
-                    	<a href="faq.php?id=<?php echo $id; ?>">FAQ</a>
-                    </li>
-                    <!--<li>
-                    	<a href="why-maxlife.php?id=<?php echo $id; ?>">WHY?</a>
-                    </li>-->
-                </ul></div>
+<body>
+    
+<?php include_once("header.php") ?>
 <a style="display:block;position:relative;top:-330px;left:80px;width:690px;height:300px;background-color:transparent;" href="/food-storage.php"></a>
-</div>
+    <!-- Page Content -->
+    <section class="p-t-b-0" id="slider">
+        <div class="container">
+            <div id="owl-demo" class="owl-carousel">
+                <div class="item p-rel">
+                    <img src="images/slider/slider1.jpg">
 
-<div id="container2">
-				<table align="center" border="0" cellpadding="10" cellspacing="10">
-						<tr>
-                        <td style="vertical-align: text-top;">
-                        		<a href="meat.php?id=<?php echo $id; ?>"><img border="0" src="/images/product/meat.jpg" alt="" /></a><br /><br />
-                        </td>
-                        <td style="vertical-align: text-top;">
-                        		<a href="fruit.php?id=<?php echo $id; ?>"><img border="0" src="/images/product/fruit.jpg" alt="" /></a><br /><br />
-                        </td>
-                        <td style="vertical-align: text-top;">
-                        		<a href="veg.php?id=<?php echo $id; ?>"><img border="0" src="/images/product/veg.jpg" alt="" /></a><br /><br />
-                        </td>
-                        <td style="vertical-align: text-top;">
-                        		<a href="dairy.php?id=<?php echo $id; ?>"><img border="0" src="/images/product/dairyeggs.jpg" alt="" /></a><br /><br />
-                        </td>
-                    </tr>
-					</table> 
-					
-					<table border="0" width="900" align="center" cellpadding="5" cellspacing="5">
-					<tr><td align="center" colspan="5" class="smallhead"><a href="compare.php?id=<?php echo $id; ?>">Click here to compare MaxLife to other major brands</a></td><td rowspan="7"><a href="food-storage.php?id=<?php echo $id; ?>"><img src="/images/2buckets_stacked_logo.gif"></a></td>
-					<tr height="3"><td></td><td></td><td></td><td></td></tr>
-					<tr><td align="right"><img src="/images/icon_fillers.gif"></td><td><font class="smallhead">Fewer Filler (Non-Meal) Servings</font><br \><font class="smalldesc">We fill our servings numbers with meals, not cheap drinks and desserts.  Competitors fill their packages with up to 69% non-meal servings.</font></td><td align="right"><img src="/images/icon_ship.gif"></td><td><font class="smallhead">Free Shipping</font><br \><font class="smalldesc">We offer free shipping on EVERY order in 48 U.S. states. No minimums.</font></td></tr>
-					<tr height="3"><td></td><td></td><td></td><td></td></tr>
-					<tr><td align="right"><img src="/images/icon_cost.gif"></td><td><font class="smallhead">Lower Cost Per Serving</font><br \><font class="smalldesc">Despite offering more meal servings, our price per serving is still lower than the competition.</font></td><td align="right"><img src="/images/icon_taste.gif"></td><td><font class="smallhead">Better Tasting</font><br \><font class="smalldesc">Rated independently at 85% for taste.  Compare to 57% competitor rating.</font></td></tr>
-					<tr height="3"><td></td><td></td><td></td><td></td></tr>
-					<tr><td align="right"><img src="/images/icon_calories.gif"></td><td><font class="smallhead">Lower Cost Per 2000 Calories</font><br \><font class="smalldesc">Servings with low calorie count won't last in a food emergency.  Our servings get you closer to your required daily calorie intake.</font></td><td align="right"><img src="/images/icon_convenient.gif"></td><td><font class="smallhead">More Convenient</font><br \><font class="smalldesc">Faster time to ship, resealable pouches. Some of our competitors don't even offer stackable & resuable buckets or just-add-water meals.</font></td></tr>
-					<tr height="3"><td></td><td></td><td></td><td></td></tr>
-					</table>
-</div>
+                    <div class="p-abs">
+                     <p><span class="slider-text">25 YEAR</span><br>
+                       <span class="bold-text">BETTER TASTING</span><br>
+                         <span class="slider-text">fOOD STORAGE</span></p>
 
-<div id="containerfooter"><span id="indexfooter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://verify.authorize.net/anetseal/?pid=6a6313b8-1f03-4eaa-9a4f-39b386e72824&rurl=http%3A//www.maxlifefoods.com/contact.php%3Fid%3D" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-							<!--<a href="MaxLifeFoodsBrochure.pdf"><b>PRICE BROCHURE</b></a>&nbsp;&nbsp;|&nbsp;&nbsp;-->
-							<a href="index.php?id=<?php echo $id; ?>">HOME</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    	<!--<a href="food-storage.php?id=<?php echo $id; ?>">FOOD STORAGE</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    	<a href="supplemental.php?id=<?php echo $id; ?>">FRUIT/VEG/DAIRY</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    	<a href="seeds.php?id=<?php echo $id; ?>">SEEDS</a>&nbsp;&nbsp;|&nbsp;&nbsp;-->
-                    	<a href="compare.php?id=<?php echo $id; ?>">COMPARE</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    	<a href="privacy.php?id=<?php echo $id; ?>">PRIVACY</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    	<a href="terms.php?id=<?php echo $id; ?>">TERMS</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    	<a href="returns.php?id=<?php echo $id; ?>">CANCELLATION/RETURNS</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    	<a href="contact.php?id=<?php echo $id; ?>">CONTACT</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    	<a href="faq.php?id=<?php echo $id; ?>">FAQ</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                    	<a href="why-maxlife.php?id=<?php echo $id; ?>">WHY MAXLIFE?</a></span>
-                    	
-                    	
-							<span id="indexfacebook"><a href="http://www.facebook.com/maxlifefoods" target="_blank"><img src="/images/facebooksquare.jpg" border="0"></a></span></div>
+                       <a href="#">Buy now <i class="fa fa-chevron-right"></i> </a>
+                        <a href="#">Shop now <i class="fa fa-chevron-right"></i> </a>
+                    </div>
+                </div>
+                <div class="item"><img src="images/slider/slider2.jpg"></div>
+                <div class="item"><img src="images/slider/slider1.jpg"></div>
+            </div>
+            <ul class="slider-list">
 
-      <script class="secret-source">
-        jQuery(document).ready(function($) {
+                <li>
+                    BETTER TASTING
 
-          $('#banner-fade').bjqs({
-				// width and height need to be provided to enforce consistency
-				// if responsive is set to true, these values act as maximum dimensions
-				width : 674,
-				height : 174,
-				
-				// animation values
-				animtype : 'fade', // accepts 'fade' or 'slide'
-				animduration : 750, // how fast the animation are
-				animspeed : 5000, // the delay between each slide
-				automatic : true, // automatic
-				
-				// control and marker configuration
-				showcontrols : false, // show next and prev controls
-				centercontrols : true, // center controls verically
-				nexttext : 'Next', // Text for 'next' button (can use HTML)
-				prevtext : 'Prev', // Text for 'previous' button (can use HTML)
-				showmarkers : false, // Show individual slide markers
-				centermarkers : false, // Center markers horizontally
-				
-				// interaction values
-				keyboardnav : true, // enable keyboard navigation
-				hoverpause : false, // pause the slider on hover
-				
-				// presentational options
-				usecaptions : true, // show captions for images using the image title tag
-				randomstart : true, // start slider at random slide
-				responsive : false // enable responsive capabilities (beta)
-          });
-        });
-      </script>
-      
+                </li>
+
+                <li>
+                    LOWER PRICES
+                </li>
+                <li>
+                    MORE FOOD CHOICES
+                </li>
+                <li>
+                    FREE SHIPPING
+                </li>
+                <li>
+                    RESEALABLE POUCHES
+                </li>
+                <li>
+                    MORE FOOD PER SERVING
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-9">
+                <img src="images/banner1.jpg" class="border">
+            </div>
+            <div class="col-md-3">
+                <div class="home-banner"><img src="images/banner2.jpg"></div>
+                <div class="home-banner-title">Sampler Kit</div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+
+               <div class="col-md-12 col-xs-12 col-sm-12 home-price-list">
+                   <div class="col-md-2 col-xs-12 col-sm-6 serving">120 serving entree</div>
+                   <div class="col-md-4 col-sm-6 col-xs-12 price-box">
+                       <div class="col-md-8 col-sm-8 col-xs-8 home-price-title">MaxLifeFoods</div><div class="col-md-4 col-xs-4 col-sm-4 home-price">$174.99</div>
+                       <div class="col-md-8 col-sm-8 col-xs-8 home-price-title">Legacy Premium</div><div class="col-md-4 col-xs-4 col-sm-4 home-price">$174.99</div>
+                       <div class="col-md-8 col-sm-8 col-xs-8 home-price-title">My Food Storage</div><div class="col-md-4  col-xs-4 col-sm-4 home-price">$174.99</div>
+                   </div>
+                   <div class="col-md-4 col-sm-6 col-xs-12 price-box">
+                       <div class="col-md-8 col-sm-8 col-xs-8 home-price-title">*My Patriot Supply</div><div class="col-md-4 col-xs-4 col-sm-4 home-price">$174.99</div>
+                       <div class="col-md-8 col-sm-8 col-xs-8 home-price-title">*Only 56 Entree Servings</div><div class="col-md-4 col-xs-4 col-sm-4 home-price">$174.99</div>
+                   </div>
+                   <div class="col-md-2 col-xs-12 col-sm-12" style="padding-right: 0"><span class="compare">Click to compare!</span></div>
+               </div>
+           </div>
+
+    </section>
+    <section id="product">
+        <div class="container">
+                <div class="col-md-3 home-product">
+                    <a href="meat.php?id=<?php echo $id; ?>"> <img src="images/product/product1.jpg"></a>
+                    <div class="home-product-title">ADD-ONS (MEAT)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div>
+                </div>
+                <div class="col-md-3 home-product">
+                    <a href="fruit.php?id=<?php echo $id; ?>"><img src="images/product/product2.jpg">
+                    <div class="home-product-title">ADD-ONS (FRUIT)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div>
+                </div>
+                <div class="col-md-3 home-product">
+                    <a href="veg.php?id=<?php echo $id; ?>"><img src="images/product/product3.jpg"></a>
+                    <div class="home-product-title">ADD-ONS (VEG)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div>
+                </div>
+                <div class="col-md-3 home-product">
+                    <a href="dairy.php?id=<?php echo $id; ?>"><img src="images/product/product4.jpg"></a>
+                    <div class="home-product-title">ADD-ONS (EGGS)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div>
+                </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row compare-box">
+                <div class="col-md-5 compare1">
+                    <img src="images/icons/copy.png"> Click here to compare
+                </div>
+                <div class="col-md-7 compare2">
+                    MaxLife to other major brands
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 border-right border-bottom">
+                    <img src="images/icons/fewer.png">
+                    <h2>Fewer Filler (Non-Meal) Servings</h2>
+                    <p>We fill our servings numbers with meals, not cheap drinks and desserts. Competitors fill their packages with up to 69% non-meal servings.</p>
+                </div>
+                <div class="col-md-4 border-right border-bottom">
+                    <img src="images/icons/save.png">
+                    <h2>Lower Cost Per
+                        Serving</h2>
+                    <p>Despite offering more meal servings, our price per serving is still lower than the competition.</p>
+                </div>
+                <div class="col-md-4 border-bottom">
+                    <img src="images/icons/calories.png">
+                    <h2>Lower Cost Per 2000
+                        Calories</h2>
+                    <p>Servings with low calorie count won't last in a food emergency. Our servings get you closer to your required daily calorie intake.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 border-right">
+                    <img src="images/icons/shipping.png">
+                    <h2>Free Shipping</h2>
+                    <p>We offer free shipping on EVERY order in 48 U.S. states. No minimums.</p>
+                </div>
+                <div class="col-md-4 border-right">
+                    <img src="images/icons/tasting.png">
+                    <h2>Better Tasting</h2>
+                    <p>Rated independently at 85% for taste. Compare to 57% competitor rating.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/icons/more_convienient.png">
+                    <h2>More Convenient</h2>
+                    <p>Faster time to ship, resealable pouches. Some of our competitors don't even offer stackable & resuable buckets or just-add-water meals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+                <img src="images/banner3.jpg">
+        </div>
+    </section>
+    <section id="brand">
+        <div class="container">
+            <div class="col-md-12" style="text-align: center"><h1>BLACK LINE SEEN ON</h1></div>
+            <div class="col-md-12">
+                <ul>
+                    <li><img src="images/brands/01.png"></li>
+                    <li><img src="images/brands/02.png"></li>
+                    <li><img src="images/brands/03.png"></li>
+                    <li><img src="images/brands/04.png"></li>
+                    <li><img src="images/brands/05.png"></li>
+                    <li><img src="images/brands/06.png"></li>
+                    <li><img src="images/brands/07.png"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<?php include_once("footer.php") ?>
 <?php include_once("googlefooter.php") ?>
 </body>
 
