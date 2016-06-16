@@ -1,5 +1,4 @@
 <?php
-
 	//CHECK FOR HACKERS
 	foreach ($_POST as $key => $value) {
 	    if (strlen($value) > 100 or strpos($value, '=') > 0) {
