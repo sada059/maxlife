@@ -2,6 +2,7 @@
 <!--------------------------------------------------
 Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
 --------------------------------------------------->
+<i style="display: none">
 <script type="text/javascript">
 /* <![CDATA[ */
 var google_conversion_id = 1010409560;
@@ -16,3 +17,4 @@ var google_remarketing_only = true;
 <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1010409560/?value=0&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
+</i>

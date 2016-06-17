@@ -12,37 +12,17 @@ if ($id == '') {
     }
 
 ?>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 
 <head>
 
 <meta http-equiv="content-type" content="text/html; charset=WINDOWS-1252" >
 <title>MaxLifeFoods - 25 Year Food Storage</title>
-<link rel="stylesheet" href="css/main_s.css" type="text/css" media="all">
-
 
 <?php include_once("includes/head.php") ?>
 <!-- load jQuery and the plugin -->
 <!--<script src="js/jquery-1.7.1.min.js"></script>-->
-<script src="js/bjqs-1.3.min.js"></script>
-
-<script type="text/javascript">
-function cycleImages(){
-      var $active = $('#portfolio_cycler .active');
-      var $next = ($('#portfolio_cycler .active').next().length > 0) ? $('#portfolio_cycler .active').next() : $('#portfolio_cycler img:first');
-      $next.css('z-index',2);//move the next image up the pile
-	  $active.fadeOut(1500,function(){//fade out the top image
-	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
-      $next.css('z-index',3).addClass('active');//make the next image the top one
-	  if ($('#portfolio_cycler .active').next().length > 0) setTimeout('cycleImages()',7000);//check for a next image, and if one exists, call the function recursively
-      });
-    }
-
-    $(document).ready(function(){
-      // run every 7s
-      setTimeout('cycleImages()', 5500);
-    })
-</script>
+<!--<script src="js/bjqs-1.3.min.js"></script>-->
 
 <?php include_once("analyticstracking.php") ?>
 
@@ -51,25 +31,43 @@ function cycleImages(){
 <body>
     
 <?php include_once("includes/header.php") ?>
-<a style="display:block;position:relative;top:-330px;left:80px;width:690px;height:300px;background-color:transparent;" href="/food-storage.php"></a>
-    <!-- Page Content -->
+<!-- Page Content -->
     <section class="p-t-b-0" id="slider">
         <div class="container">
             <div id="owl-demo" class="owl-carousel">
                 <div class="item p-rel">
                     <img src="images/slider/slider1.jpg">
-
                     <div class="p-abs">
-                     <p><span class="slider-text">25 YEAR</span><br>
-                       <span class="bold-text">BETTER TASTING</span><br>
-                         <span class="slider-text">fOOD STORAGE</span></p>
+                        <p><span class="slider-text">25 YEAR</span><br>
+                            <span class="bold-text">BETTER TASTING</span><br>
+                            <span class="slider-text">fOOD STORAGE</span></p>
 
-                       <a href="#">Buy now <i class="fa fa-chevron-right"></i> </a>
-                        <a href="#">Shop now <i class="fa fa-chevron-right"></i> </a>
+                        <a href="food-storage.php?id=<?php echo $id; ?>">Buy now <i class="fa fa-chevron-right"></i> </a>
+                        <a href="food-storage.php?id=<?php echo $id; ?>">Shop now <i class="fa fa-chevron-right"></i> </a>
                     </div>
                 </div>
-                <div class="item"><img src="images/slider/slider2.jpg"></div>
-                <div class="item"><img src="images/slider/slider1.jpg"></div>
+                <div class="item">
+                    <img src="images/slider/slider2.jpg">
+                    <div class="p-abs">
+                        <p><span class="slider-text">25 YEAR</span><br>
+                            <span class="bold-text">BETTER TASTING</span><br>
+                            <span class="slider-text">fOOD STORAGE</span></p>
+
+                        <a href="food-storage.php?id=<?php echo $id; ?>">Buy now <i class="fa fa-chevron-right"></i> </a>
+                        <a href="food-storage.php?id=<?php echo $id; ?>">Shop now <i class="fa fa-chevron-right"></i> </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/slider/slider1.jpg">
+                    <div class="p-abs">
+                        <p><span class="slider-text">25 YEAR</span><br>
+                            <span class="bold-text">BETTER TASTING</span><br>
+                            <span class="slider-text">fOOD STORAGE</span></p>
+
+                        <a href="food-storage.php?id=<?php echo $id; ?>">Buy now <i class="fa fa-chevron-right"></i> </a>
+                        <a href="food-storage.php?id=<?php echo $id; ?>">Shop now <i class="fa fa-chevron-right"></i> </a>
+                    </div>
+                </div>
             </div>
             <ul class="slider-list">
 
@@ -103,13 +101,16 @@ function cycleImages(){
         <div class="container">
             <div class="row">
             <div class="col-md-9">
-                <img src="images/banner1.jpg" class="border">
+                <a href="food-storage.php?id=<?php echo $id; ?>"> <img src="images/banner1.jpg" class="border"></a>
             </div>
+             <a href="details.php?id=<?php echo $id; ?>&pid=111">
             <div class="col-md-3">
                 <div class="home-banner"><img src="images/banner2.jpg"></div>
                 <div class="home-banner-title">Sampler Kit</div>
             </div>
+             </a>
             </div>
+
         </div>
     </section>
     <section>
@@ -126,7 +127,7 @@ function cycleImages(){
                        <div class="col-md-8 col-sm-8 col-xs-8 home-price-title">*My Patriot Supply</div><div class="col-md-4 col-xs-4 col-sm-4 home-price">$174.99</div>
                        <div class="col-md-8 col-sm-8 col-xs-8 home-price-title">*Only 56 Entree Servings</div><div class="col-md-4 col-xs-4 col-sm-4 home-price">$174.99</div>
                    </div>
-                   <div class="col-md-2 col-xs-12 col-sm-12" style="padding-right: 0"><span class="compare">Click to compare!</span></div>
+                   <a href="compare.php?id=<?php echo $id; ?>"><div class="col-md-2 col-xs-12 col-sm-12" style="padding-right: 0"><span class="compare">Click to compare!</span></div></a>
                </div>
            </div>
 
@@ -134,29 +135,29 @@ function cycleImages(){
     <section id="product">
         <div class="container">
                 <div class="col-md-3 home-product">
-                    <a href="meat.php?id=<?php echo $id; ?>"> <img src="images/product/product1.jpg"></a>
-                    <div class="home-product-title">ADD-ONS (MEAT)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div>
+                    <a href="meat.php?id=<?php echo $id; ?>"> <img src="images/product/product1.jpg">
+                    <div class="home-product-title">ADD-ONS (MEAT)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div></a>
                 </div>
                 <div class="col-md-3 home-product">
                     <a href="fruit.php?id=<?php echo $id; ?>"><img src="images/product/product2.jpg">
-                    <div class="home-product-title">ADD-ONS (FRUIT)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div>
+                    <div class="home-product-title">ADD-ONS (FRUIT)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div></a>
                 </div>
                 <div class="col-md-3 home-product">
-                    <a href="veg.php?id=<?php echo $id; ?>"><img src="images/product/product3.jpg"></a>
-                    <div class="home-product-title">ADD-ONS (VEG)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div>
+                    <a href="veg.php?id=<?php echo $id; ?>"><img src="images/product/product3.jpg">
+                    <div class="home-product-title">ADD-ONS (VEG)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div></a>
                 </div>
                 <div class="col-md-3 home-product">
-                    <a href="dairy.php?id=<?php echo $id; ?>"><img src="images/product/product4.jpg"></a>
-                    <div class="home-product-title">ADD-ONS (EGGS)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div>
+                    <a href="dairy.php?id=<?php echo $id; ?>"><img src="images/product/product4.jpg">
+                    <div class="home-product-title">ADD-ONS (EGGS)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div></a>
                 </div>
         </div>
     </section>
     <section>
         <div class="container">
-            <div class="row compare-box">
-                <div class="col-md-5 compare1">
+           <div class="row compare-box">
+               <a href="compare.php?id=<?php echo $id; ?>">  <div class="col-md-5 compare1">
                     <img src="images/icons/copy.png"> Click here to compare
-                </div>
+                </div></a>
                 <div class="col-md-7 compare2">
                     MaxLife to other major brands
                 </div>
@@ -205,13 +206,14 @@ function cycleImages(){
     </section>
     <section>
         <div class="container">
-                <img src="images/banner3.jpg">
+            <a href="food-storage.php?id=<?php echo $id; ?>">   <img src="images/banner3.jpg"></a>
         </div>
     </section>
     <section id="brand">
         <div class="container">
             <div class="col-md-12" style="text-align: center"><h1>BLACK LINE SEEN ON</h1></div>
             <div class="col-md-12">
+                <a href="why-maxlife.php?id=<?php echo $id; ?>">
                 <ul>
                     <li><img src="images/brands/01.png"></li>
                     <li><img src="images/brands/02.png"></li>
@@ -221,6 +223,7 @@ function cycleImages(){
                     <li><img src="images/brands/06.png"></li>
                     <li><img src="images/brands/07.png"></li>
                 </ul>
+                </a>
             </div>
         </div>
     </section>

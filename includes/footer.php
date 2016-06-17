@@ -18,7 +18,7 @@
                         <li><a href="why-maxlife.php?id=<?php echo $id; ?>">WHY MAXLIFE?</a></li>
                     </ul>
                     <ul>
-                        <li>© 2016 <a href="http:maxlifefoods.com" target="_blank">MaxLifeFoods</a>. All rights reserved.</li>
+                        <li> &copy  2016 <a href="http:maxlifefoods.com" target="_blank">MaxLifeFoods</a>. All rights reserved.</li>
                     </ul>
 
                 </div>

@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 text-right m-t-m-30 col-sm-3 col-xs-6">
                     <img src="images/dennis.png">
-                    <p class="cart">SHOPPING CART<img src="images/icons/cart.png"></p>
+                    <a href="shoppingcart.php?id=<?php echo $id; ?>"> <p class="cart">SHOPPING CART<img src="images/icons/cart.png"></p></a>
                 </div>
             </div>
         </div>
