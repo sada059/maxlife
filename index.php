@@ -21,7 +21,7 @@ if ($id == '') {
 <link rel="stylesheet" href="css/main_s.css" type="text/css" media="all">
 
 
-<?php include_once("head.php") ?>
+<?php include_once("includes/head.php") ?>
 <!-- load jQuery and the plugin -->
 <!--<script src="js/jquery-1.7.1.min.js"></script>-->
 <script src="js/bjqs-1.3.min.js"></script>
@@ -50,7 +50,7 @@ function cycleImages(){
 
 <body>
     
-<?php include_once("header.php") ?>
+<?php include_once("includes/header.php") ?>
 <a style="display:block;position:relative;top:-330px;left:80px;width:690px;height:300px;background-color:transparent;" href="/food-storage.php"></a>
     <!-- Page Content -->
     <section class="p-t-b-0" id="slider">
@@ -224,7 +224,7 @@ function cycleImages(){
             </div>
         </div>
     </section>
-<?php include_once("footer.php") ?>
+<?php include_once("includes/footer.php") ?>
 <?php include_once("googlefooter.php") ?>
 </body>
 
