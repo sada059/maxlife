@@ -15,16 +15,16 @@
     }
 	
 	$query = "SELECT * FROM products WHERE product_key='$pid'";
+
 	$run = mysql_query($query);
 	$info = mysql_fetch_assoc($run);
-
 	$query = "SELECT * FROM products WHERE actual_product_key='$pid'";
 	$run = mysql_query($query);
 
-	if ($info['active'] <> 1) {
-		header( 'Location: http://www.maxlifefoods.com/' ) ;
-		exit();
-	}
+//	if ($info['active'] <> 1) {
+//		header( 'Location: http://www.maxlifefoods.com/' ) ;
+//		exit();
+//	}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
