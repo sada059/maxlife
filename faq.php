@@ -48,7 +48,10 @@ function cycleImages(){
     <div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>">Family Food Storage Calculator</a></div>
         <div class="row">
         	<h1>Why Maxlife? / FAQ</h1>
-    		<iframe src="//player.vimeo.com/video/86631588" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    		<div class="col-md-12 col-xs-12 col-sm-12">
+            	<iframe src="//player.vimeo.com/video/86631588" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <p>&nbsp;</p>
     	<p><strong>PEACE OF MIND</strong> - We created MaxLife Foods to create food storage that <strong>stored as long as possible, tasted better, provided more food per serving, was more convenient to store & use, was easier to prepare, and was more affordable</strong>.  We did just that.  Our delicious, gourmet, just-add-water food storage entrees are guaranteed to be the best price.</p>
         <p><strong>BEST VALUE</strong> - Some competitors are so expensive that they won't even tell you their prices until they're in your home doing a demonstration and trying to upsell you.  You also may end up with <strong>canned food that is hard to store, difficult to open, and unweildy once opened</strong>.  Other food storage companies <strong>claim packages with a high number of servings while using a lot of cheap fillers like drinks and desserts</strong> that provide low caloric intake that is needed in an emergency.</p>
         <p><strong>U.S. PRODUCED</strong> - Our food storage is 100% produced in the U.S. and 99% of the food is sourced from the U.S.  The other small percentage is for seasonal freshness.</p>
@@ -67,10 +70,10 @@ function cycleImages(){
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Why is MaxLife better?</a>
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Why is MaxLife better?</a>
                 </h4>
             </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
+            <div id="collapseOne" class="panel-collapse collapse">
                 <div class="panel-body">
                     MaxLife food storage tastes better, is less expensive, provides more food per serving, has fewer fillers like drinks & desserts, is easier to prepare, and more convenient to store. We are truly the best value in the industry.
                 </div>
@@ -337,7 +340,8 @@ function cycleImages(){
         content:  "\f061"; /* "play" icon */
         float: right;
         color: #F58723;
-        font-size: 18px;
+        font-size: 15px;
+		font-weight: normal;
         line-height: 22px;
         /* rotate "play" icon from > (right arrow) to down arrow */
         -webkit-transform: rotate(-90deg);
@@ -356,6 +360,22 @@ function cycleImages(){
         transform: rotate(90deg);
         color: #454444;
     }
+	.responsive-video {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 60px; overflow: hidden;
+}
+
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
 </style>
 <?php include_once("includes/footer.php") ?>
 <?php include_once("googlefooter.php") ?>
