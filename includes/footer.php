@@ -11,7 +11,7 @@
                         <li><a href="index.php?id=<?php echo $id; ?>">home</a></li>
                         <li><a href="compare.php?id=<?php echo $id; ?>">COMPARE</a></li>
                         <li><a href="privacy.php?id=<?php echo $id; ?>">PRIVACY</a></li>
-                        <a href="terms.php?id=<?php echo $id; ?>">TERMS</a>
+                        <li><a href="terms.php?id=<?php echo $id; ?>">TERMS</a></li>
                         <li><a href="returns.php?id=<?php echo $id; ?>">CANCELLATION/RETURNS</a></li>
                         <li><a href="contact.php?id=<?php echo $id; ?>">CONTACT</a></li>
                         <li><a href="faq.php?id=<?php echo $id; ?>">FAQ</a></li>

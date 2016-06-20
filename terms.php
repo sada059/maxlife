@@ -1,5 +1,7 @@
 <?php
+error_reporting(0);
 $id = $_GET['id'];
+
 
 if ($id == '') {
     session_start();
@@ -14,6 +16,7 @@ if ($id == '') {
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<?php include_once("includes/head.php") ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Why MaxLife | MaxLifeFoods</title>
 <link rel="stylesheet" href="css/main_s.css" type="text/css" />
@@ -41,20 +44,18 @@ function cycleImages(){
 <?php include_once("analyticstracking.php") ?>
 </head>
 <body>
-
-<div id="content">
-
-<?php include_once("header.php") ?>
-
-        <div class="subbody2" style="height: 4000px;">
-			<div class="subbody">
+<?php include_once("includes/header.php") ?>
+<section>
+    <div class="container">
+    <div class="row">
             	<div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>">Family Food Storage Calculator</a></div>
             	<div class="maincontent">
                     
 
         <h1>Terms of Use</h1>
 
-<div class="std"><p>Welcome to MAXLIFEFOODS.COM (“Site”).  By using this Site, you are agreeing to the following terms and conditions of use.  If you are acting on behalf of a company or other legal entity, you represent and warrant that you have the authority to act on behalf of and bind that entity to the following terms and conditions of use.</p>
+<div class="std">
+<p>Welcome to MAXLIFEFOODS.COM (“Site”).  By using this Site, you are agreeing to the following terms and conditions of use.  If you are acting on behalf of a company or other legal entity, you represent and warrant that you have the authority to act on behalf of and bind that entity to the following terms and conditions of use.</p>
 
 <p>If you disagree with any of the terms and conditions, you may not use this Site or any service offered through this Site. We reserve the right to change these Terms of Use at any time without specific notice to you, so please check for changes each time you use the Site. Your continued use of the Site following the posting of changes to these terms and conditions means that you accept those changes and agree to abide by them.</p>
 
@@ -164,18 +165,13 @@ function cycleImages(){
 
 <p>You are contracting with MaxLife Foods, LLC. Correspondence should be directed to: MaxLife Foods, LLC., PO Box 2335, Orem, UT  84059 and <a href="mailto:foodstorage@maxlifefoods.com">foodstorage@maxlifefoods.com</a>. The provisions of these Terms of Use apply equally to and are for the benefit of our subsidiaries, affiliates, partners, and third-party content providers.</p>
 
-<p>©2012 MaxLife Foods, LLC. All rights reserved.</p></div>
-		
-		
-		
+<p>©2012 MaxLife Foods, LLC. All rights reserved.</p>
 		
         		</div>
 			</div>
 </div>
-
-<?php include_once("footer.php") ?>
-
 </div>
+<?php include_once("includes/footer.php") ?>
 <?php include_once("googlefooter.php") ?>
 </body>
 </html>
