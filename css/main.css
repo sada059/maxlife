@@ -136,7 +136,9 @@ body > section {
     text-align: center;
 }
 
-
+header {
+    background: #ebebeb none repeat scroll 0 0;
+}
 #main .navbar{
     margin-top: -50px;
     border: 0;
@@ -147,12 +149,15 @@ body > section {
     border-color: #9e1d20 !important;
     z-index: 999;
 }
+#main {
+    background: #ebebeb none repeat scroll 0 0;
+}
 #main a:hover{
     background: #9e1d20;
     color: #ffffff !important;
 }
 .active{
-    background: #9e1d20 !important;
+    /*background: #9e1d20 !important;*/
     color: #ffffff;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
@@ -160,7 +165,7 @@ body > section {
     color: #ffffff !important;
 }
 .top-bar {
-    padding-top: 10px;
+    padding-top: 0;
     background: #505050;
     line-height: 9px;
 }
@@ -172,13 +177,16 @@ body > section {
 }
 .cart{
     color: #9e1d20;
+    display: table-cell;
     font-weight: bold;
-    padding-top: 23px;
+    height: 150px;
+    padding-top: 0;
+    vertical-align: bottom;
 }
 .hero-spacer {
     margin-top: 50px;
 }
-
+.man-img {    left: auto;    position: absolute;    right: 15px;    top: 0;}
 .hero-feature {
     margin-bottom: 30px;
 }
@@ -893,7 +901,21 @@ ul.slider-list{
 	.foo-logo p{text-align:center;}
 	.copyright-info p {text-align: center;}
 }
-@media  (max-width:767px){
+@media  (max-width:768px){
+	.top-bar p{text-align:left;}
+	.man-img {    left: auto;    position: absolute;    right: 15px;    top: 0;}
+	#main .nav{margin:0 auto;}
+	#main .navbar{margin-top:20px;}
+	#main .nav li a{padding: 10px;}
+	.top-bar p{padding-left:0;}
+}
+@media  (max-width:767px){	
+.navbar-collapse.collapse.in {
+    border: medium none;
+}
+.navbar-header{text-align:center;  margin-bottom: 5px;
+    margin-top: 5px;}
+.navbar-toggle{float:none; margin:0 auto;}
 	.foo-logo p{text-align:center;}
 	.copyright-info p {text-align: center;}
     body{
@@ -909,7 +931,7 @@ ul.slider-list{
    max-width: 48%;
     }
     .top-bar p{
-        padding: 0;
+        padding: 5px 0 0;
     }
     #main .nav li{
         width: 100%;
