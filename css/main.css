@@ -486,18 +486,36 @@ body > section {
     padding: 15px;
 }
 #footer a{
-    color: #c9c9c9 !important;
+    color: #c9c9c9;
 }
 #footer a:hover{
-    color: #c52d2f !important;
+    color: #c52d2f;
 }
 #footer ul{
-    text-align: right;
+        float: right;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.footer-menu,.copyright-info{    clear: both;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	}
+.copyright-info p{
+margin:15px 0; text-align: right;	
+	}
+	#footer a:hover, #footer a{
+		color:#c9c9c9;
+		}
+.copyright-info p, .copyright-info a, .footer-menu ul li a{
+	color: #c9c9c9;   
 }
 #footer ul li{
     list-style: none;
     display: inline-block;
-    color: #c9c9c9 !important;
+    color: #c9c9c9;
     text-transform: uppercase;
     padding: 5px;
 }
@@ -865,7 +883,19 @@ ul.slider-list{
 .storage-box a:hover{
     color: lightblue;
 }
+@media  (max-width:1024px){
+	.foo-logo p{text-align:center;}
+	.copyright-info p {text-align: center;}
+	#footer ul {float: none;}
+	.footer-menu, .copyright-info{float: none;margin: 15px auto;}
+}
+@media  (max-width:999px){
+	.foo-logo p{text-align:center;}
+	.copyright-info p {text-align: center;}
+}
 @media  (max-width:767px){
+	.foo-logo p{text-align:center;}
+	.copyright-info p {text-align: center;}
     body{
         overflow-x: hidden;
     }
@@ -941,6 +971,10 @@ ul.slider-list{
     }
 }
 @media screen and (max-width: 600px) {
+	#footer ul{ margin: 10px 0;}
+	#footer ul li{ padding: 2px 5px;}
+	.foo-logo p{text-align:center;}
+	.copyright-info p {text-align: center;}
     table#cart tbody td .form-control{
         width:20%;
         display: inline !important;
