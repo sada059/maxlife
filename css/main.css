@@ -857,6 +857,12 @@ ul.slider-list{
 .product-slider-body{
     border: 1px solid #a1a1a1;
 }
+.storage-box a{
+    color: #ffffff;
+}
+.storage-box a:hover{
+    color: lightblue;
+}
 @media  (max-width:767px){
     body{
         overflow-x: hidden;
