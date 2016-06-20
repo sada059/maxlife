@@ -1,4 +1,5 @@
 <?php 
+error_reporting(0);
 $id = $_GET['id'];
 
 if ($id == '') {
@@ -14,6 +15,7 @@ if ($id == '') {
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<?php include_once("includes/head.php") ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/main_s.css" type="text/css" />
 <title>Contact Us | MaxLifeFoods</title>
@@ -53,15 +55,12 @@ function cycleImages(){
 <?php include_once("analyticstracking.php") ?>
 </head>
 <body>
-
-<div id="content">
-
-<?php include_once("header.php") ?>
-
-        <div class="subbody2" style="height: 800px;">
-			<div class="subbody">
+<?php include_once("includes/header.php") ?>
+<section>
+    <div class="container">
+        <div class="row">       
             	<div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>">Family Food Storage Calculator</a></div>
-            	<div class="maincontent">
+            	<div class="heading-blue">
                 	<h1>Contact Us</h1>
                     <font style="color: red; font-weight: bold;"><?php echo $msg; ?></font>
                     <form name="payment" id="payment" method="post" action="send.php" onsubmit="return validate()">
@@ -100,12 +99,9 @@ function cycleImages(){
                     </form>
                 </div>
             </div>
-
         </div>
-
-<?php include_once("footer.php") ?>
-
-</div>
+</section>
+<?php include_once("includes/footer.php") ?>
 <?php include_once("googlefooter.php") ?>
 </body>
 </html>
