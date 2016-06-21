@@ -242,8 +242,11 @@ if ($id == '') {
         </div>
                       </section>
 					<br />
-					<div align="center" class="smallhead"><a href="food-storage.php?id=<?php echo $id; ?>">Click here to view our food storage products</a>.</div>
-                                        <div class="row"><div class="col-md-3"><a href="details.php?id=<?php echo $id; ?>&pid=111"><img src="images/try_samples.jpg" border="0"></a></div><div class="col-md-9">
+                                        <div align="center" class="smallhead"><a href="food-storage.php?id=<?php echo $id; ?>" style="margin-bottom: 10%">Click here to view our food storage products</a>.</div>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <a href="details.php?id=<?php echo $id; ?>&pid=111"><img src="images/try_samples.jpg" border="0"></a></div>
+                                            <div class="col-md-10" style="margin: 2% 0 10% 0">
 					<a href="details.php?id=<?php echo $id; ?>&pid=111">Click to try</a> some samples of our gourmet just-add-water food storage.  We're sure you'll fall in love with the great taste of gourmet MaxLife Foods.  You want your food storage to not only be there when you need it, but also for your family to enjoy it.
 					<br /><br />Sample our fruit mix, apple blueberry granola, hearty potato soup & cheddar broccoli soup.  Sample pack of the MaxLife Basic and Deluxe entree/breakfast line. LIMIT ONE PER CUSTOMER. 25 year shelf life.</div></div>
 					

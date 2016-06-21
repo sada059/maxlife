@@ -31,35 +31,18 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title><?php echo $info['product_name2']; ?> | MaxLifeFoods</title>
-<link rel="stylesheet" href="css/main_s.css" type="text/css" />
-
-<script src="/js/jquery-1.3.2.min.js" content="text/javascript"></script>
-<script type="text/javascript">
-
-function cycleImages(){
-      var $active = $('#portfolio_cycler2 .active');
-      var $next = ($('#portfolio_cycler2 .active').next().length > 0) ? $('#portfolio_cycler2 .active').next() : $('#portfolio_cycler2 img:first');
-      $next.css('z-index',2);//move the next image up the pile
-	  $active.fadeOut(1500,function(){//fade out the top image
-	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the image
-      $next.css('z-index',3).addClass('active');//make the next image the top one
-	  if ($('#portfolio_cycler2 .active').next().length > 0) setTimeout('cycleImages()',7000);//check for a next image, and if one exists, call the function recursively
-      });
-    }
-
-    $(document).ready(function(){
-      // run every 7s
-      setTimeout('cycleImages()', 5500);
-    })
-
-</script>
+<?php include_once("includes/head.php") ?>
 <?php include_once("analyticstracking.php") ?>
 </head>
 <body>
 
-<div id="content">
-
-<?php include_once("header.php") ?>
+<?php include_once("includes/header.php") ?>
+    <div class="container heading-blue">
+        <div class="row">
+            <div class="col-md-6" style="padding: 0"></div>
+            <div class="col-md-6"> <a href="food-storage-calculator.php?id=<?php echo $id; ?>"><img src="images/icons/family-foodstorage-calculator.png" class="push-right"></a></div>
+        </div>
+    </div>
 
         <div class="subbody2" style="height: 3000px;">
 			<div class="subbody">
@@ -725,7 +708,7 @@ function cycleImages(){
 			</div>
 		</div>
 
-<?php include_once("footer.php") ?>
+<?php include_once("includes/footer.php") ?>
 
 </div>
 <?php include_once("googlefooter.php") ?>
