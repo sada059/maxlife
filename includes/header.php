@@ -2,8 +2,8 @@
     <div class="top-bar">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-xs-10">
-                    <div class="top-number"><p><img src="images/icons/ph.png"> 1-888-858-6387 &nbsp;&nbsp;&nbsp;<img src="images/icons/fb.png"></p></div>
+                <div class="col-sm-12">
+                    <div class="top-number"><p><img src="images/icons/ph.png"> 1-888-858-6387 &nbsp;&nbsp;&nbsp;<img src="images/icons/fb.png"><img src="images/dennis.png" class="man-img"></p></div>
                 </div>
             </div>
         </div><!--/.container-->
@@ -23,8 +23,7 @@
                 <div class="col-md-3 col-sm-3 col-xs-6 head-offer">
                     <img src="images/offer_banner.png">
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-right m-t-m-30 col-sm-3 col-xs-6">
-                    <img src="images/dennis.png">
+                <div class="col-md-3 col-sm-6 col-xs-12 text-right m-t-m-30 col-sm-3 col-xs-6">                    
                     <a href="shoppingcart.php?id=<?php echo $id; ?>"> <p class="cart">SHOPPING CART<img src="images/icons/cart.png"></p></a>
                 </div>
             </div>

@@ -17,18 +17,7 @@ if ($id == '') {
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="css/main_s.css" type="text/css" />
 <title>Contact Us | MaxLifeFoods</title>
-<script language="javascript">
-	function validate(){
-		var f=document.form1;
-		if(f.name.value==''){
-			alert('Your name is required');
-			f.name.focus();
-			return false;
-		}
-		f.command.value='update';
-		f.submit();
-	}
-</script>
+
     <?php include_once("includes/head.php") ?>
 <?php include_once("analyticstracking.php") ?>
 </head>
