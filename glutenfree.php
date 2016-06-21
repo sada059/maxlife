@@ -29,7 +29,6 @@
 	<input type="hidden" name="productid" />
     <input type="hidden" name="command" />
 </form>
-<div id="content">
 
 <?php include_once("includes/header.php") ?>
 
@@ -93,7 +92,6 @@
 
 <?php include_once("includes/footer.php") ?>
 
-</div>
 <?php include_once("googlefooter.php") ?>
 </body>
 </html>
