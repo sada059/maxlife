@@ -45,7 +45,7 @@ function cycleImages(){
 <section>
     <div class="container">
     
-    <div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>">Family Food Storage Calculator</a></div>
+    <div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>"><img src="images/icons/family-foodstorage-calculator.png" class="push-right"></a></div>
         <div class="row">
         	<h1>Why Maxlife? / FAQ</h1>
     		<div class="col-md-12 col-xs-12 col-sm-12">
