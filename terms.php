@@ -41,7 +41,7 @@ $(document).ready(function(){
 <section>
     <div class="container">
     	<div class="row">
-			<div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>">Family Food Storage Calculator</a></div>
+			<div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>"><img src="images/icons/family-foodstorage-calculator.png" class="push-right"></a></div>
             <div class="heading-blue">
                 <h1>Terms of Use</h1>               
                 <p>Welcome to MAXLIFEFOODS.COM (“Site”).  By using this Site, you are agreeing to the following terms and conditions of use.  If you are acting on behalf of a company or other legal entity, you represent and warrant that you have the authority to act on behalf of and bind that entity to the following terms and conditions of use.</p>
