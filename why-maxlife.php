@@ -42,7 +42,7 @@ $(document).ready(function(){
 <section>
     <div class="container">
         <div class="row">
-            <div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>">Family Food Storage Calculator</a></div>
+            <div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>"><img src="images/icons/family-foodstorage-calculator.png" class="push-right"></a></div>
             <div class="heading-blue">
                 <h1>Why Maxlife?</h1>
                 <div class="col-md-12 col-xs-12 col-sm-12">
