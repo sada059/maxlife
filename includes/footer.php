@@ -2,25 +2,26 @@
         <footer id="footer">
             <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3 foo-logo">
                     <p>   <img src="images/icons/security.png">&nbsp; &nbsp; &nbsp; &nbsp;
                         <img src="images/icons/authorize.png"></p>
                 </div>
-                <div class="col-md-8">
-                    <ul>
-                        <li><a href="index.php?id=<?php echo $id; ?>">home</a></li>
-                        <li><a href="compare.php?id=<?php echo $id; ?>">COMPARE</a></li>
-                        <li><a href="privacy.php?id=<?php echo $id; ?>">PRIVACY</a></li>
-                        <a href="terms.php?id=<?php echo $id; ?>">TERMS</a>
-                        <li><a href="returns.php?id=<?php echo $id; ?>">CANCELLATION/RETURNS</a></li>
-                        <li><a href="contact.php?id=<?php echo $id; ?>">CONTACT</a></li>
-                        <li><a href="faq.php?id=<?php echo $id; ?>">FAQ</a></li>
-                        <li><a href="why-maxlife.php?id=<?php echo $id; ?>">WHY MAXLIFE?</a></li>
-                    </ul>
-                    <ul>
-                        <li> &copy  2016 <a href="http:maxlifefoods.com" target="_blank">MaxLifeFoods</a>. All rights reserved.</li>
-                    </ul>
-
+                <div class="col-lg-9">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="index.php?id=<?php echo $id; ?>">home</a></li>
+                            <li><a href="compare.php?id=<?php echo $id; ?>">COMPARE</a></li>
+                            <li><a href="privacy.php?id=<?php echo $id; ?>">PRIVACY</a></li>
+                            <li><a href="terms.php?id=<?php echo $id; ?>">TERMS</a></li>
+                            <li><a href="returns.php?id=<?php echo $id; ?>">CANCELLATION/RETURNS</a></li>
+                            <li><a href="contact.php?id=<?php echo $id; ?>">CONTACT</a></li>
+                            <li><a href="faq.php?id=<?php echo $id; ?>">FAQ</a></li>
+                            <li><a href="why-maxlife.php?id=<?php echo $id; ?>">WHY MAXLIFE?</a></li>
+                        </ul>
+                    </div>
+					<div class="copyright-info">
+                        <p>&copy  2016 <a href="http:maxlifefoods.com" target="_blank">MaxLifeFoods</a>. All rights reserved.</p>
+					</div>
                 </div>
             </div>
             </div>

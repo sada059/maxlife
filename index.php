@@ -135,19 +135,19 @@ if ($id == '') {
     <section id="product">
         <div class="container">
                 <div class="col-md-3 home-product">
-                    <a href="meat.php?id=<?php echo $id; ?>"> <img src="images/product/product1.jpg">
+                    <a href="meat.php?id=<?php echo $id; ?>"> <img src="images/product/product1.jpg" class="img-responsive">
                     <div class="home-product-title">ADD-ONS (MEAT)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div></a>
                 </div>
                 <div class="col-md-3 home-product">
-                    <a href="fruit.php?id=<?php echo $id; ?>"><img src="images/product/product2.jpg">
+                    <a href="fruit.php?id=<?php echo $id; ?>"><img src="images/product/product2.jpg" class="img-responsive">
                     <div class="home-product-title">ADD-ONS (FRUIT)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div></a>
                 </div>
                 <div class="col-md-3 home-product">
-                    <a href="veg.php?id=<?php echo $id; ?>"><img src="images/product/product3.jpg">
+                    <a href="veg.php?id=<?php echo $id; ?>"><img src="images/product/product3.jpg" class="img-responsive">
                     <div class="home-product-title">ADD-ONS (VEG)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div></a>
                 </div>
                 <div class="col-md-3 home-product">
-                    <a href="dairy.php?id=<?php echo $id; ?>"><img src="images/product/product4.jpg">
+                    <a href="dairy.php?id=<?php echo $id; ?>"><img src="images/product/product4.jpg" class="img-responsive">
                     <div class="home-product-title">ADD-ONS (EGGS)<span class="plus-icon"><img src="images/icons/plus_icon.png"></span> </div></a>
                 </div>
         </div>
