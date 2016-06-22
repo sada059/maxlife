@@ -54,7 +54,7 @@ if ($id == '') {
 <section>
     <div class="container">
         <div class="row">
-            <div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>">Family Food Storage Calculator</a></div>
+            <div class="calcbutton"><a href="food-storage-calculator.php?id=<?php echo $id; ?>"><img src="images/icons/family-foodstorage-calculator.png" class="push-right"></a></div>
             <div class="heading-blue">
                 <h1>Contact Us</h1>
                 <font style="color: red; font-weight: bold;"><?php echo $msg; ?></font>
