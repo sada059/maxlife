@@ -39,7 +39,6 @@ h6 {
 
 h1{
     font-size: 36px;
-    color:#fff;
 }
 
 h2{
@@ -138,9 +137,12 @@ body > section {
 
 header {
     background: #ebebeb none repeat scroll 0 0;
+	margin-bottom: 20px;
 }
 #main .navbar{
-    margin-top: -50px;
+    margin-top: 0;
+	margin-bottom:0;
+	min-height: auto;
     border: 0;
     background: none;
     border: 0;
@@ -171,22 +173,32 @@ header {
 }
 .top-bar p{
     color: #ffffff;
+    float: left;
     font-size: 23px;
-    text-align: center;
-    padding-left: 26%;
+    margin: 10px 3% 10px 0;
+    padding: 0;
+    text-align: right;
+    width: 74%;
 }
 .cart{
     color: #9e1d20;
-    display: table-cell;
     font-weight: bold;
-    height: 150px;
-    padding-top: 0;
-    vertical-align: bottom;
+    height: auto;
+    margin: 24% auto 0;
+    padding: 0;
 }
 .hero-spacer {
     margin-top: 50px;
 }
-.man-img {    left: auto;    position: absolute;    right: 15px;    top: 0;}
+.top-bar .stick-img{
+float: right;
+    margin: 0;
+   /* max-width: 242px;*/
+    padding: 0;
+    position: relative;
+    width: 23%;	
+}
+.man-img {    left: auto;    position: absolute;    right: 0;    top: 0;}
 .hero-feature {
     margin-bottom: 30px;
 }
@@ -220,15 +232,15 @@ header {
     background-color: #3b5998;
     margin-right: 4px;
 }
-.logo-img{
+.caption-img{
     margin-left: 7%;
 }
 .logo-section{
-    padding-bottom: 9px;
+    padding-bottom: 0;
     background: #ebebeb;
 }
 #main .nav{
-    margin: -23px auto 0 auto;
+    margin: -15px auto 0;
     width: 100%;
     text-align: center;
 }
@@ -891,6 +903,11 @@ ul.slider-list{
 .storage-box a:hover{
     color: lightblue;
 }
+@media  (max-width:1199px){
+	#main .nav{
+		margin: 10px auto 0;
+	}
+}
 @media  (max-width:1024px){
 	.foo-logo p{text-align:center;}
 	.copyright-info p {text-align: center;}
@@ -901,23 +918,72 @@ ul.slider-list{
 	.foo-logo p{text-align:center;}
 	.copyright-info p {text-align: center;}
 }
+@media  (max-width:991px){
+	.max-life-r img {
+    	max-width: 45%;
+	}
+	#main .nav li a{
+		padding:5px 12px;
+	}
+	.caption-img {
+    	margin-left: 5%;
+	}
+}
 @media  (max-width:768px){
-	.top-bar p{text-align:left;}
-	.man-img {    left: auto;    position: absolute;    right: 15px;    top: 0;}
-	#main .nav{margin:0 auto;}
-	#main .navbar{margin-top:20px;}
-	#main .nav li a{padding: 10px;}
+	.top-bar p{
+		text-align: right;
+    	width: 70%;
+	}
+	.max-life-r img {
+    	max-width: 45%;
+	}
+	.head-offer {
+    	text-align: left;
+	}
+	.caption-img {
+    	margin-left: 5%;
+	}
+	.cart-con{
+	    float: right;
+		margin: 0 auto;
+		width: auto;
+	}
+	.cart {
+    	/*height: 100px;*/
+	}
+	.man-img {}
+	#main .nav{}
+	#main .navbar{}
+	#main .nav li a{padding: 5px 10px;}
 	.top-bar p{padding-left:0;}
 }
-@media  (max-width:767px){	
+@media  (max-width:767px){
+	.max-life-r, .head-offer, .cart-con{
+    	width: 33%;
+		text-align:right;
+	}	
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	    background: transparent;
+}
 .navbar-collapse.collapse.in {
     border: medium none;
+	padding-left: 0;
+    padding-right: 0;
 }
 .navbar-header{text-align:center;  margin-bottom: 5px;
     margin-top: 5px;}
 .navbar-toggle{float:none; margin:0 auto;}
 	.foo-logo p{text-align:center;}
 	.copyright-info p {text-align: center;}
+	.top-bar p {
+    	width: 62%;
+		 margin: 10px 0;
+		 font-size: 20px;
+		 padding:0;
+	}
+	.top-bar .stick-img{
+		width: 30%;
+	}
     body{
         overflow-x: hidden;
     }
@@ -925,22 +991,19 @@ ul.slider-list{
         max-width: 100%;
     }
     .m-t-m-30{
-        margin-top: 0px;
+        /*margin-top: 0px;*/
     }
     .max-life-r img{
-   max-width: 48%;
+   		clear: both;
+		display: block;
+		float: left;
+		max-width: 80%;
     }
-    .top-bar p{
-        padding: 5px 0 0;
-    }
+	.caption-img {
+    	margin: 5px auto 0;
+	}
     #main .nav li{
         width: 100%;
-    }
-    .max-life-r{
-        text-align: center;
-    }
-    .logo-img {
-        margin-left: 3%;
     }
     #brand{
        overflow-x: hidden;
@@ -975,9 +1038,6 @@ ul.slider-list{
     #footer ul{
         text-align: center;
     }
-    .head-offer{
-        text-align: center;
-    }
     .serving{
         border: none;
     }
@@ -992,7 +1052,26 @@ ul.slider-list{
         font-size: 18pt;
     }
 }
+@media screen and (max-width: 668px) {
+	.max-life-r img{
+		max-width: 90%;	
+	}
+	.max-life-r, .head-offer, .cart-con{
+    	width: 33%;
+	}
+	.top-bar p {
+		width: 60%;
+		font-size: 18px;
+		padding: 0;
+	}
+	.top-bar .stick-img{
+		width: 30%;
+	}
+}
 @media screen and (max-width: 600px) {
+	.max-life-r{
+		 margin-top: 0;
+	}
 	#footer ul{ margin: 10px 0;}
 	#footer ul li{ padding: 2px 5px;}
 	.foo-logo p{text-align:center;}
@@ -1028,4 +1107,61 @@ ul.slider-list{
     table#cart tfoot td{display:block; }
     table#cart tfoot td .btn{display:block;}
 
+}
+@media screen and (max-width: 360px) {
+	.top-bar p {
+    	font-size: 15px;
+    	padding: 0;
+		text-align: left;
+    	width: auto;
+	}
+	.cart {
+    	font-size: 11px;
+    	line-height: 12px;
+	}
+	.cart-con{
+		padding-left: 0;		
+	}
+	.max-life-r {
+    	padding-right: 0;
+	}
+	/*.top-bar .stick-img {
+    	width: 40%;
+	}
+	.max-life-r{
+		width: 35%;
+		margin-top: 0;
+	}
+	.head-offer{	
+		width: 28%;		
+	}
+	 .cart-con {
+    	margin: 0 auto;
+	}
+	.max-life-r img {
+    	max-width: 100%;
+	}
+	.cart{
+		font-size: 11px;
+    	margin: 35% auto 0;
+	}*/
+}
+@media screen and (max-width: 320px) {
+	.top-bar .stick-img {
+    	width: 40%;
+	}
+	.top-bar p {
+		width: auto;
+	    font-size: 13px;
+	}
+	.cart {
+    	font-size: 11px;
+    	line-height: 12px;
+	}
+	.cart-con{
+		padding-left: 0;		
+	}
+	.max-life-r {
+    	padding-right: 0;
+	}
 }

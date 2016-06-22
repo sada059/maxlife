@@ -3,7 +3,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="top-number"><p><img src="images/icons/ph.png"> 1-888-858-6387 &nbsp;&nbsp;&nbsp;<img src="images/icons/fb.png"><img src="images/dennis.png" class="man-img"></p></div>
+                    <div class="top-number">
+                    	<p><img src="images/icons/ph.png"> 1-888-858-6387 <img src="images/icons/fb.png"></p>
+                    	<p class="stick-img"><img src="images/dennis.png" class="man-img"></div>
+                    </div>
                 </div>
             </div>
         </div><!--/.container-->
@@ -17,13 +20,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12 m-t-m-30 max-life-r">
-                  <img src="images/logo_banner.png">
-                  <img src="images/logo.png" class="logo-img">
+                  <img src="images/logo_banner.png" class="logo-img">
+                  <img src="images/logo.png" class="caption-img">
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6 head-offer">
                     <img src="images/offer_banner.png">
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 text-right m-t-m-30 col-sm-3 col-xs-6">                    
+                <div class="col-md-3 col-sm-6 col-xs-12 text-right col-sm-3 col-xs-6 cart-con">                    
                     <a href="shoppingcart.php?id=<?php echo $id; ?>"> <p class="cart">SHOPPING CART<img src="images/icons/cart.png"></p></a>
                 </div>
             </div>
